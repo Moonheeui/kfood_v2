@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-size: 18px;
+    color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #0c0202;
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header & nav */
+header {
+    width: 100vw;
+    height: 80px;
+    background: #0c0202;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.nav-list a {
+    padding: 6px 25px;
+    border: 1px solid #FCBA04;
+    border-radius: 20px;
+}
+
+main {
+    background-image: url(../images/korea-background1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 3rem 1.2rem 5rem 1.2rem;
+}
+
+hr {
+    margin: 3rem 0;
+}
+
+#intro {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+.mark i {
+    font-size: 25px;
+}
+
+p {
+    font-size: 1rem;
+    /* font-weight: 300; */
+    color: #fff;
+    line-height: 2rem;
+    margin: 15px 0;
+}
+
+#display {
+    padding: 1rem;
+    margin: 20px 0;
+    border: 2px solid #250001;
+    background: #fff;
+    opacity: 0.8;
+    position: relative;
+}
+
+.view .title {
+    font-family: 'Coustard', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 15px;
+}
+
+#display ul {
+    font-size: 16px;
+}
+
+#display ul li {
+    margin-bottom: 5px;
+    color: black;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    line-height: 1.4em;
+}
+
+#display a {
+    background-color: #250001;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 4px 15px;
+    position: absolute;
+    right: 15px;
+}
+
+#display a:hover {
+    border: 2px solid #FCBA04;
+    background-color: #FCBA04;
+    color: black;
+}
+
+#update-form {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#update-form #update {
+    background-color: #FCBA04;
+    border: none;
+    color: black;
+    padding: 8px 15px;
+}
+
+#update-form #update:hover {
+    background-color: #A50104;
+    color: white;
+}
+
+form a,
+form a:link,
+form a:visited {
+    background-color: rgb(66 162 236 / 0.95);
+    color: rgb(240 240 240 / 0.95);
+}
+
+form a:hover,
+form a:focus {
+    background-color: rgb(16 16 16 / 0.95);
+    color: rgb(66 162 236 / 0.95);
+}
+
+form fieldset {
+    padding: 1.5rem;
+    border: 2px solid #590004;
+    border-radius: 5px;
+    color: white;
+}
+
+form fieldset legend {
+    font-family: 'Coustard', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+form label {
+    margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #590004;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit, 
+.recipe {
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#submit-btn {
+    padding: 5px 30px;
+    border-radius: 6px;
+    background-color: #A50104;
+    border: none;
+    color: white;
+}
+
+#submit-btn:hover {
+    background-color: #0D1282;
+}
+
+.info-btn {
+    padding: 5px 30px;
+    background-color: #FCBA04;
+    border: none;
+    border-radius: 6px;
+    color: black;
+}
+
+.info-btn:hover {
+    background-color: #250001;
+    color: white;
+}
+
+#submit-btn i,
+.info-btn i {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 580px) {
+
+    input,
+    select,
+    textarea {
+        margin-bottom: 0;
+    }
+
+    #display ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #display a {
+        position: static;
+    }
+
+    #update-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+}

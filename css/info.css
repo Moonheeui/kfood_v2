@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-size: 18px;
+    color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: rgb(32 32 32 /1);
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header & nav */
+header {
+    width: 100vw;
+    height: 80px;
+    background: #0c0202;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.nav-list a {
+    padding: 6px 25px;
+    border: 1px solid #FCBA04;
+    border-radius: 20px;
+}
+
+.page {
+    max-width: 640px;
+    margin: 0 auto 30px auto;
+}
+
+.panel {
+    background-color: #fff;
+    color: #666;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+main {
+    /* background-image: url(../images/korea.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; */
+    padding: 3rem 1.2rem 5rem 1.2rem;
+}
+
+main>section {
+    margin: 3rem 0;
+}
+
+h2 {
+    font-family: 'Coustard', serif;
+    font-weight: 500;
+    letter-spacing: .05em;
+    margin: 100px 0 40px;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1rem;
+    /* font-weight: 300; */
+    color: #fff;
+    line-height: 1.4em;
+}
+
+button {
+    font-size: 90%;
+    text-align: left;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}

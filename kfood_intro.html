@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFood-App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/gh/snd-lib/snd-lib@v1.1.2/dist/browser/snd.js?kit=01"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            min-width: 600px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .banner {
+            background-image: url(images/korea-background.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            padding: 100px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 200px;
+            height: 200px;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #fff;
+            margin-top: 30px;
+            line-height: 2rem;
+        }
+
+        i {
+            font-size: 2rem;
+            color: #9400FF;
+            margin-top: 9rem;
+        }
+
+        .copy {
+            font-size: 0.8rem;
+            margin-top: 1.2rem;
+        }
+
+        @media screen and (max-width: 520px) {
+            .logo img {
+                width: 100px;
+                height: 100px;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-top: 40px;
+                line-height: 1.8rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="banner">
+        <div class="container">
+            <div class="title">
+                <a href="kfoodv2.html" class="logo"><img src="images/kfood-logo-w.png" alt="logo"></a>
+                <p>Healthy food ideas <br> to spice up your meal hour!</p>
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <p class="copy">&copy; 2023 Moonhee Kim </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

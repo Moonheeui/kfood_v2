@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kfood_DB_App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@200;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/gh/snd-lib/snd-lib@v1.1.2/dist/browser/snd.js?kit=01"></script>
+
+    <link rel="stylesheet" href="css/Kfood_v2.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-list">
+                    <a href="kfood_intro.html"><i class="fa-solid fa-house-user"></i></a>
+                    <a href="kfoodv2.html"><i class="fa-solid fa-utensils"></i></a>
+                    <a href="menu_info.html"><i class="fa-solid fa-book-open"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/kfood-logo-w.png" alt="kfood-logo" width="80px" height="80px">
+                </div>
+            </div>
+        </section>
+
+        <section id="forms">
+            <div class="container">
+                <form id="input-form" action="app/insert_favourite.php" method="POST">
+                    <fieldset>
+                        <legend>Your Favourite Korean Food</legend>
+
+                        <p class="mark"><i class="fa-solid fa-utensils"></i></p>
+
+                        <p>
+                            <label for="full_name">Your Name :</label>
+                            <input type="text" name="full_name" />
+                        </p>
+
+                        <p>
+                            <label for="menu">Menu :</label>
+                            <input id="menu" type="text" name="menu" />
+                        </p>
+
+                        <article id="results-box"></article>
+
+                        <!-- <P>
+                            <label for="food">Food :</label>
+                            <select name="food" id="food">
+                                <option selected>Choose...</option>
+                                <option value="kimbap">Kimbap</option>
+                                <option value="bibimbap">Bibimbap</option>
+                                <option value="rice_cake">Stir Fried Rice Cakes</option>
+                                <option value="ramen">Ramen</option>
+                                <option value="udon">Udon</option>
+                                <option value="japchae">Japchae</option>
+                                <option value="chicken">Fried Chicken</option>
+                                <option value="bulgogi">Bulgogi</option>
+                                <option value="bbq">Korean BBQ</option>
+                                <option value="kimchi_rice">Kimchi Fried Rice</option>
+                                <option value="kimchi_stew">Kimchi Stew</option>
+                                <option value="pancake">Kimchi Pancake</option>
+                            </select>
+                        </p> -->
+
+                        <p>
+                            <label for="taste">Taste :</label>
+                            <select id="taste" name="taste">
+                                <option selected>Choose...</option>
+                                <option value="spicy">Spicy</option>
+                                <option value="mild">Mild</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="info">Menu Info :</label>
+                            <input id="info" type="text" name="info"></input>
+                        </p>
+
+                        <p class="submit">
+                            <a href="#"  type="submit" id="submit-btn">SEND<i class="fa-solid fa-circle-check"></i></a>
+                        </p>
+                        <p class="recipe">
+                            <a href="menu_info.html" class="info-btn">MORE INFO<i class="fa-solid fa-book-open"></i></a>
+                        </p>
+
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="view">
+            <div class="container">
+                <h3 class="title">Popular Korean Food</h3>
+                <div id="display"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/kfood_v2.js" defer></script>
+
+</body>
+
+</html>
